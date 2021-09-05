@@ -23,6 +23,14 @@ public:
   static const float l1 = 0.4318 - 0.0203; //length of link 1
   static const float l2 = 0.4331; //length of link 2
   static const float l3 = 0.055; //length of link 3
+  float c1;
+  float s1;
+  float c2;
+  float s2;
+  float c3;
+  float s3;
+  float c21;
+  float s21;
   HTransform T0_1;  //Homogenous transform from Link 0 to Link 1, updated by computeT0_1()
   HTransform T1_2;  //Homogenous transform from Link 1 to Link 2, updated by computeT1_2()
   HTransform T2_3;  //Homogenous transform from Link 2 to Link 3, updated by computeT2_3()
